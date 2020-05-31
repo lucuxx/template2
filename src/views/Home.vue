@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="欢迎使用vue-cool-cli创建应用" />
+    <h3>基础模板已经搭建完成，直接使用即可</h3>
+    <div></div>
   </div>
 </template>
 
@@ -12,7 +14,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
 }
 </script>
