@@ -5,12 +5,8 @@ const install = (Vue) => {
     return (install.installed = true)
   }
   /*定义属性到Vue原型中*/
-  Object.defineProperties(Vue.prototype, {
-    $api: {
-      get() {
-        return apiList
-      },
-    },
+  Object.defineProperty(Vue.prototype, '$api', {
+    get () { return apiList }
   })
 }
 export default {
