@@ -7,6 +7,7 @@ Vue.config.productionTip = false
 
 import utils from './utils'
 import http from './http'
+import directive from './directive'
 import * as filters from './filters'
 
 // 注册全局过滤器
@@ -16,6 +17,7 @@ Object.keys(filters).forEach((key) => {
 
 Vue.use(utils)
 Vue.use(http)
+Vue.use(directive)
 
 new Vue({
   router,
