@@ -5,7 +5,6 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-import utils from './utils'
 import http from './http'
 import directive from './directive'
 import * as filters from './filters'
@@ -15,7 +14,6 @@ Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key])
 })
 
-Vue.use(utils)
 Vue.use(http)
 Vue.use(directive)
 
